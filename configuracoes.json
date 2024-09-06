@@ -1,0 +1,29 @@
+{
+  "produtos": [
+      { "nome": "Vela Aromática", "preco": 30.00, "imagem": "velacoco.jpg" },
+      { "nome": "Esponja Vegetal", "preco": 5.90, "imagem": "esponja.jpg" },
+      { "nome": "Sacola Ecológica", "preco": 7.50, "imagem": "sacola.jpg" },
+      { "nome": "Prato Fibra De Coco", "preco": 59.90, "imagem": "pratococo.jpg" },
+      { "nome": "Sabonete Natural - Alecrim", "preco": 15.90, "imagem": "sabonete.jpg" },
+      { "nome": "Filtro de Barro", "preco": 249.90, "imagem": "filtro.jpg" }
+      
+  ],
+  "sidebar": {
+      "toggleButtonId": "toggle-sidebar",
+      "sidebarId": "sidebar",
+      "closeButtonId": "close-sidebar"
+  },
+  "carrinho": [
+      { "nome": "Produto 1", "preco": 100 },
+      { "nome": "Produto 2", "preco": 200 }
+  ],
+  "pagina": {
+      "produtosDivId": "produtos",
+      "carrinhoDivId": "carrinho",
+      "sidebar": {
+          "toggleButtonId": "toggle-sidebar",
+          "sidebarId": "sidebar",
+          "closeButtonId": "close-sidebar"
+      }
+  }
+}

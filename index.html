@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrend</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="img\logo.jpg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="img\imagem.jpg" alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#" id="toggle-sidebar">Carrinho</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <aside id="filtros">
+        <form id="filtro-form">
+            <label for="ordenar-por">Ordenar por:</label>
+            <select id="ordenar-por">
+                <option value="nome">Ordem Alfabética</option>
+                <option value="preco">Preço</option>
+            </select>
+    
+            <label for="faixa-preco">Faixa de Preço:</label>
+            <input type="number" id="preco-min" placeholder="Preço Mínimo" step="0.01">
+            <input type="number" id="preco-max" placeholder="Preço Máximo" step="0.01">
+            <button type="button" id="aplicar-filtros">Aplicar Filtros</button>
+        </form>
+    </aside>
+    <main>
+        <section class="produtos" id="produtos">
+            <h2>Produtos</h2>
+        </section>
+        <div id="spinner" class="spinner" style="display: none;"></div>
+    </main>
+    
+    <aside id="sidebar">
+        <h2>Carrinho</h2>
+        <div id="carrinho"></div>
+        <button id="close-sidebar">Fechar</button>
+        <button id="finalizar-compra">Finalizar Compra</button>
+    </aside>
+    <script src="script.js"></script>
+</body>
+</html>
